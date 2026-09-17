@@ -1,0 +1,7 @@
+.app-icon > img{
+    height: 4rem;
+}
+.search-icon{
+    margin-left: -35px!important;
+    z-index: 10;
+}
