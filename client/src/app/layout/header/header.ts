@@ -6,4 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './header.css',
   templateUrl: './header.html',
 })
-export class Header {}
+export class Header {
+  categories:string[]=[
+    'TV & Video',
+    'Audio & Home Theater',
+    'Mobile',
+    'Computers',
+    'Camera & Photo',
+    'Wearable Technology'
+  ]
+}

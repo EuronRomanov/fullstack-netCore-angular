@@ -1,0 +1,24 @@
+carousel{
+    display: block;
+    
+}
+ carousel img {
+    width: 100%;
+    aspect-ratio: 16/6;
+    object-fit: cover;
+
+ }
+
+ .owl-c-card{
+    background-color: white;
+    margin:10px 10px;
+    border:1px solid #5c6c75;
+    border-radius: 1rem;
+ }
+ .owl-c-card:hover{
+  border:2px solid #0aad0a;
+ }
+ .own-c-img{
+    height: 10rem;
+    object-fit: contain;
+ }

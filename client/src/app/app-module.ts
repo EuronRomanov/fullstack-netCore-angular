@@ -6,9 +6,17 @@ import { Home } from './home/home';
 import { LayoutModule } from './layout/layout-module';
 
 
+
+
+
 @NgModule({
   declarations: [App, Home],
-  imports: [BrowserModule, AppRoutingModule,LayoutModule],
+  imports: [
+    BrowserModule, 
+    AppRoutingModule, 
+    LayoutModule,
+  
+  ],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })

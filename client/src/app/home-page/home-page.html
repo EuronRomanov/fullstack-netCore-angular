@@ -1,0 +1,52 @@
+<div class="home container">
+    <section class="carousel mt-5">
+        <carousel [interval]="myInterval">
+            <slide>
+                <img src="assets/banner_1.jpg" alt="first slide">
+            </slide>
+            <slide>
+                <img src="assets/banner_2.jpg" alt="second slide">
+            </slide>
+            <slide>
+                <img src="assets/banner_3.jpeg" alt="third slide">
+            </slide>
+        </carousel>
+    </section>
+    <section class="categories mt-5">
+        <div class="row">
+            <div class="col-12 mb-2">
+                <h1>Categories</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <owl-carousel-o [options]="customOptions">
+
+                @for (slide of slidesStore(); track slide.id) {
+                <ng-template carouselSlide [id]="slide.id">
+
+                    <mat-card class="owl-c-card" appearance="outlined">
+
+                        <img mat-card-image class="own-c-img" [src]="slide.src" [alt]="slide.alt">
+                        <mat-card-content class="text-center">
+                            <p>
+                                {{slide.title}}
+                            </p>
+                        </mat-card-content>
+                    </mat-card>
+                </ng-template>
+                }
+
+            </owl-carousel-o>
+        </div>
+    </section>
+
+    <section class="popular-product mt-5">
+        <div class="row">
+            <div class="col-12 mb-2">
+                <h1>Popular products</h1>
+            </div>
+        </div>
+        <div class="row"></div>
+    </section>
+</div>
