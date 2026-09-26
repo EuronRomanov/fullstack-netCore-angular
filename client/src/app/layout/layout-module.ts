@@ -6,11 +6,18 @@ import {MatIconModule} from '@angular/material/icon';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
   declarations: [Header, Footer],
-  imports: [CommonModule,MatIconModule,MatButtonModule,MatMenuModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    MatIconModule,
+    MatButtonModule,
+    MatMenuModule
+  ],
   exports:[Header, Footer]
 })
 export class LayoutModule {}

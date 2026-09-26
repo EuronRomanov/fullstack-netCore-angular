@@ -9,6 +9,9 @@ carousel{
 
  }
 
+ .banner-c-img{
+   border-radius: 1rem;
+ }
  .owl-c-card{
     background-color: white;
     margin:10px 10px;
