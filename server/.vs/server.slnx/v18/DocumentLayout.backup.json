@@ -1,12 +1,139 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\pc1\\Documents\\EShop\\server\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\data\\datacontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:data\\datacontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\entities\\auditbaseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:entities\\auditbaseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\entities\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:entities\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\entities\\productreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:entities\\productreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataContex.cs",
+              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Data\\DataContex.cs",
+              "RelativeDocumentMoniker": "Data\\DataContex.cs",
+              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Data\\DataContex.cs",
+              "RelativeToolTip": "Data\\DataContex.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T03:33:09.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductReview.cs",
+              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\ProductReview.cs",
+              "RelativeDocumentMoniker": "Entities\\ProductReview.cs",
+              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\ProductReview.cs",
+              "RelativeToolTip": "Entities\\ProductReview.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T03:24:44.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\Product.cs",
+              "RelativeToolTip": "Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T03:23:42.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuditBaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\AuditBaseEntity.cs",
+              "RelativeDocumentMoniker": "Entities\\AuditBaseEntity.cs",
+              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\AuditBaseEntity.cs",
+              "RelativeToolTip": "Entities\\AuditBaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T03:17:41.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\Category.cs",
+              "RelativeToolTip": "Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T03:12:30.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Brand.cs",
+              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\Brand.cs",
+              "RelativeDocumentMoniker": "Entities\\Brand.cs",
+              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\Brand.cs",
+              "RelativeToolTip": "Entities\\Brand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T03:11:05.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Entities\\User.cs",
+              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\User.cs",
+              "RelativeToolTip": "Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T02:50:48.609Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
