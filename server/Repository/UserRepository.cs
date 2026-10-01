@@ -18,12 +18,17 @@ namespace server.Repository
            return await this.contex.users.Where(u=> u.Email==email).SingleOrDefaultAsync();
         }
 
-        async Task<bool> IUserRepository.AddUser(User user)
+        public async Task<bool> AddUser(User user)
         {
             await this.contex.users.AddAsync(user);
             return await this.contex.SaveChangesAsync() > 0 ? true : false;
         }
 
         
+
+        public async Task<List<User>> GetAllUsers()
+        {
+            return await this.contex.users.ToListAsync();
+        }
     }
 }

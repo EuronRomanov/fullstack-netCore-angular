@@ -18,7 +18,8 @@ builder.Services.AddDbContext<DataContex>(opt=>opt.UseInMemoryDatabase(configura
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var key= Encoding.UTF8.GetBytes(configuration["Jwt:Key"]);
 builder.Services.AddAuthentication(x=>
@@ -49,6 +50,9 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();

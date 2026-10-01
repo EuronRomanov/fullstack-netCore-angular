@@ -10,5 +10,6 @@ namespace server.Repository
     {
         Task<User>GetUserByEmail(string email);
         Task<bool> AddUser(User user);
+        Task<List<User>>GetAllUsers();
     }
 }
