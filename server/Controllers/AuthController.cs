@@ -37,7 +37,7 @@ namespace server.Controllers
                 return BadRequest(res);
             }
 
-            if (!BCrypt.Net.BCrypt.Verify(user.Password,req.Password))
+            if (!BCrypt.Net.BCrypt.Verify(req.Password,user.Password))
             {
                 res.IsSuccessed = false;
                 res.Message = "Invalid Credentials";
@@ -76,7 +76,7 @@ namespace server.Controllers
                 UserName = req.UserName,
                 Email = req.Email,
                 Address = req.Address,
-                Password = BCrypt.Net.BCrypt.EnhancedHashPassword(req.Password)
+                Password = BCrypt.Net.BCrypt.HashPassword(req.Password)
             };
 
             bool result = await this.userRepository.AddUser(newUser);
