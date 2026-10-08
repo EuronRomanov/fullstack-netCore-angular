@@ -12,7 +12,8 @@ namespace server.Entities
         public string Address { get; set; } = "";
         public string Password { get; set; }
       
-
+        // Navegación para Refresh Tokens
+        public ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
 
     }
 }
