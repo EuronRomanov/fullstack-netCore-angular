@@ -12,5 +12,6 @@ namespace server.Data
             base.OnConfiguring(optionsBuilder);
         }
         public DbSet<User> users{get; set;}
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
     }
 }
