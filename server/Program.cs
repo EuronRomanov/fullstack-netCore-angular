@@ -12,8 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 IConfiguration configuration = builder.Configuration;
 
 // Base de datos (InMemory por ahora, cambia a SQL Server cuando quieras)
-builder.Services.AddDbContext<DataContex>(opt =>
-    opt.UseInMemoryDatabase(configuration["ConnectionStrings:DbName"] ?? "authDb"));
+builder.Services.AddDbContext<DataContex>();
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();

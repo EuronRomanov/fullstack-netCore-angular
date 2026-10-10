@@ -17,7 +17,7 @@ namespace server.Data
             string dbUser = _config["ConnectionStrings:DbUserId"] ?? throw new Exception("DbUserName missing");
             string dbUserPassword = _config["ConnectionStrings:DbUserPassword"] ?? throw new Exception("Db User Password missing");
 
-            string ConnectionStrings = String.Format(conn, dbName, dbUser, dbUser, dbUserPassword);
+            string ConnectionStrings = string.Format(conn, dbName, dbUser, dbUserPassword);
             optionsBuilder.UseSqlServer(ConnectionStrings);
             base.OnConfiguring(optionsBuilder);
         }
