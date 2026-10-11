@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi;
+using server.Interface.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +15,7 @@ IConfiguration configuration = builder.Configuration;
 // Base de datos (InMemory por ahora, cambia a SQL Server cuando quieras)
 builder.Services.AddDbContext<DataContex>();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers();                                                                                                                                                                                                                                                                                                                                                                                  
 builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 
@@ -44,6 +45,8 @@ builder.Services.AddAuthentication(x =>
 // Inyección de dependencias
 builder.Services.AddScoped<IJwtHelper, JwtHelper>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
 
 // Swagger con seguridad JWT
 builder.Services.AddSwaggerGen(options =>

@@ -23,7 +23,12 @@ namespace server.Data
         }
 
 
-
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ProductReview>().HasOne(r=>r.Product).WithMany(p=>p.ProductReviews).HasForeignKey(r=>r.ProductId);
+            modelBuilder.Entity<Product>().Property(p=>p.Price).HasPrecision(18,2);
+            base.OnModelCreating(modelBuilder);
+        }
         public DbSet<User> users{get; set;}
         public DbSet<Brand> brand { get; set; }
         public DbSet<Category> categories { get; set; }

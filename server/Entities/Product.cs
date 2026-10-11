@@ -13,7 +13,7 @@ namespace server.Entities
         public double AverageRating { get; set; }
         public int TotalReviews { get; set; }
         public bool InStock { get; set; }
-        public bool InFeatured { get; set; }=false
+        public bool InFeatured { get; set; }=false;
         public int CategoryId { get; set; }
 
         public Category Category{ get; set; }

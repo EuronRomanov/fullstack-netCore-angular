@@ -1,14 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using BCrypt.Net;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using server.Dto;
 using server.Entities;
 using server.Helper;
 using server.Repository;
+using server.Interface.Repository;
 
 namespace server.Controllers
 {
@@ -23,6 +19,7 @@ namespace server.Controllers
         public AuthController(IUserRepository userRepository, IJwtHelper helper)
         {
             this.userRepository=userRepository;
+            this.helper=helper;
         }
         [HttpPost]
         [Route("login")]
