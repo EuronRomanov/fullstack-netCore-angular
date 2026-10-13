@@ -30,11 +30,19 @@ namespace server.Controllers
         }
 
         [HttpGet("{productId}")]
-        
-        public async Task<ActionResult<ResponseDto>> GetProduct(int productId)
+        public async Task<ActionResult<ResponseDto>> GetProductById(int productId)
         {
             ResponseDto response = new ResponseDto();
-            response.Data = await productRepository.GetByIdAsync(productId); 
+            Product? product = await productRepository.GetByIdAsync(productId);
+        
+            if (product == null)
+            {
+                response.IsSuccessed = false;
+                response.Message = $"No product found with id {productId}";
+                return NotFound(response);
+            }
+        
+            response.Data = product;
             return Ok(response);
         }
 
