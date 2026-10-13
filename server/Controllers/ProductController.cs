@@ -25,7 +25,17 @@ namespace server.Controllers
         {
             ResponseDto response=new ResponseDto();
             IEnumerable<Product>products=await productRepository.GetAllAsync();
-            return Ok(products);
+            response.Data=products;
+            return Ok(response);
+        }
+
+        [HttpGet("{productId}")]
+        
+        public async Task<ActionResult<ResponseDto>> GetProduct(int productId)
+        {
+            ResponseDto response = new ResponseDto();
+            response.Data = await productRepository.GetByIdAsync(productId); 
+            return Ok(response);
         }
 
 
@@ -33,8 +43,11 @@ namespace server.Controllers
          [Route("create")]
         public async Task<ActionResult<ResponseDto>> CreateProducts(Product newProduct)
         {
-           await productRepository.AddAsync(newProduct);
-            return Created();
+               ResponseDto response = new ResponseDto();
+                await productRepository.AddAsync(newProduct);
+                response.Data = newProduct;
+                response.Message = "Product created successfully";
+                return Ok(response);
         }
 
 
@@ -42,8 +55,10 @@ namespace server.Controllers
            [Route("update")]
         public async Task<ActionResult<ResponseDto>> UpdateProducts(Product Product)
         {
-           await productRepository.UpdateAsync(Product);
-            return Ok();
+           ResponseDto response = new ResponseDto();
+            await productRepository.UpdateAsync(product);
+            response.Message = "Product updated successfully";
+            return Ok(response);
         }
 
 
@@ -60,7 +75,8 @@ namespace server.Controllers
 return BadRequest(response);
             }
            await productRepository.DeleteAsync(product);
-            return Ok(response);
+            response.Message = $"Product with id {productId} deleted successfully";
+          return Ok(response);
         }
 
     }
