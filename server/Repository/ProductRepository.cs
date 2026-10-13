@@ -8,12 +8,12 @@ using server.Interface.Repository;
 
 namespace server.Repository
 {
-    public class ProductRepository:GenericRepository<Product>,IProductRepository
+    public class ProductRepository : GenericRepository<Product>, IProductRepository
     {
-        private readonly DataContex contex;
+        //private readonly DataContex contex;
         public ProductRepository(DataContex contex) : base(contex)
         {
-            this.contex=contex;
+            //this.contex=contex;
         }
     }
 }
