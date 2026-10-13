@@ -52,7 +52,7 @@ namespace server.Controllers
         public async Task<ActionResult<ResponseDto>> DeleteProducts(int productId)
         {
             ResponseDto response=new ResponseDto();
-            Product product=await productRepository.GetByIdAsync(productId);
+            Product? product=await productRepository.GetByIdAsync(productId);
             if (product == null)
             {
                 response.IsSuccessed=false;
