@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\pc1\\Documents\\EShop\\server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pc1\\Documents\\EShop\\server\\Migrations\\20261010043125_products-added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20261010043125_products-added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\data\\datacontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:data\\datacontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\interface\\service\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:interface\\service\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Entities\\User.cs",
-              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\User.cs",
-              "RelativeToolTip": "Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-28T02:50:48.609Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20261010043125_products-added.cs",
-              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Migrations\\20261010043125_products-added.cs",
-              "RelativeDocumentMoniker": "Migrations\\20261010043125_products-added.cs",
-              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Migrations\\20261010043125_products-added.cs",
-              "RelativeToolTip": "Migrations\\20261010043125_products-added.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "IImageService.cs",
+              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Interface\\Service\\IImageService.cs",
+              "RelativeDocumentMoniker": "Interface\\Service\\IImageService.cs",
+              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Interface\\Service\\IImageService.cs",
+              "RelativeToolTip": "Interface\\Service\\IImageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-10T04:31:29.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwAsAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-10T04:13:06.78Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "Entities\\Product.cs",
-              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Entities\\Product.cs",
-              "RelativeToolTip": "Entities\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-10T04:09:29.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DataContex.cs",
-              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Data\\DataContex.cs",
-              "RelativeDocumentMoniker": "Data\\DataContex.cs",
-              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Data\\DataContex.cs",
-              "RelativeToolTip": "Data\\DataContex.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA0wBQAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-08T20:42:22.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T21:13:10.29Z",
+              "WhenOpened": "2026-10-14T21:10:05.539Z",
               "EditorCaption": ""
             }
           ]

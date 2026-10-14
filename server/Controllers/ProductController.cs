@@ -61,7 +61,7 @@ namespace server.Controllers
 
           [HttpPost]
            [Route("update")]
-        public async Task<ActionResult<ResponseDto>> UpdateProducts(Product Product)
+        public async Task<ActionResult<ResponseDto>> UpdateProducts(Product product)
         {
            ResponseDto response = new ResponseDto();
             await productRepository.UpdateAsync(product);
