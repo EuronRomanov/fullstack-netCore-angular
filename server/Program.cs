@@ -52,6 +52,19 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IImageRepository, ImageRepository>();
 builder.Services.AddScoped<IImageService, ImageService>();
 
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("auth", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000") // URL de tu frontend
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();
+    });
+});
+
 // Swagger con seguridad JWT
 builder.Services.AddSwaggerGen(options =>
 {
@@ -73,6 +86,8 @@ builder.Services.AddSwaggerGen(options =>
 
 var app = builder.Build();
 
+
+
 // Pipeline HTTP
 if (app.Environment.IsDevelopment())
 {
@@ -82,6 +97,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("auth");
 
 app.UseAuthentication(); // CRÍTICO: Faltaba
 app.UseAuthorization();
@@ -93,7 +110,7 @@ app.UseStaticFiles(new StaticFileOptions
     RequestPath="/image"
 });
 
-app.UseCors("auth");
+
 app.MapControllers();
 
 app.Run();

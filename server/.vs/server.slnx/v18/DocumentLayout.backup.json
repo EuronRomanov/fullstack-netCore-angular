@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\pc1\\Documents\\EShop\\server\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\interface\\service\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:interface\\service\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,16 +31,8 @@
       "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:data\\datacontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\repository\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:repository\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\interface\\service\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:interface\\service\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,24 +42,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "IImageService.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Interface\\Service\\IImageService.cs",
               "RelativeDocumentMoniker": "Interface\\Service\\IImageService.cs",
               "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Interface\\Service\\IImageService.cs",
               "RelativeToolTip": "Interface\\Service\\IImageService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-14T21:10:05.539Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Mapper\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Mapper\\MappingProfile.cs",
@@ -67,12 +68,11 @@
               "RelativeToolTip": "Mapper\\MappingProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T03:36:26.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T03:36:26.536Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ImageDtoRes.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Dto\\ImageDtoRes.cs",
               "RelativeDocumentMoniker": "Dto\\ImageDtoRes.cs",
@@ -80,25 +80,24 @@
               "RelativeToolTip": "Dto\\ImageDtoRes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T16:36:41.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T16:36:41.448Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAF8AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-15T16:00:41.385Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ImageService.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Service\\ImageService.cs",
               "RelativeDocumentMoniker": "Service\\ImageService.cs",
@@ -106,12 +105,11 @@
               "RelativeToolTip": "Service\\ImageService.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwBgAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T15:11:33.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T15:11:33.754Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ImageRepository.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Repository\\ImageRepository.cs",
               "RelativeDocumentMoniker": "Repository\\ImageRepository.cs",
@@ -123,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DataContex.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Data\\DataContex.cs",
               "RelativeDocumentMoniker": "Data\\DataContex.cs",
@@ -131,12 +129,11 @@
               "RelativeToolTip": "Data\\DataContex.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAwwCMAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T15:09:15.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T15:09:15.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ImageController.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Controllers\\ImageController.cs",
               "RelativeDocumentMoniker": "Controllers\\ImageController.cs",
@@ -144,8 +141,7 @@
               "RelativeToolTip": "Controllers\\ImageController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T15:03:48.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T15:03:48.542Z"
             }
           ]
         }
