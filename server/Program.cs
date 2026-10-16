@@ -7,6 +7,9 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi;
 using server.Interface.Repository;
+using server.Service;
+using server.Interface.Service;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,7 +49,8 @@ builder.Services.AddAuthentication(x =>
 builder.Services.AddScoped<IJwtHelper, JwtHelper>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
-
+builder.Services.AddScoped<IImageRepository, ImageRepository>();
+builder.Services.AddScoped<IImageService, ImageService>();
 
 // Swagger con seguridad JWT
 builder.Services.AddSwaggerGen(options =>
@@ -82,6 +86,14 @@ app.UseHttpsRedirection();
 app.UseAuthentication(); // CRÍTICO: Faltaba
 app.UseAuthorization();
 
+
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider=new PhysicalFileProvider(Path.Combine(builder.Environment.ContentRootPath,"Uploads")),
+    RequestPath="/image"
+});
+
+app.UseCors("auth");
 app.MapControllers();
 
 app.Run();

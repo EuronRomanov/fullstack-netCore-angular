@@ -35,7 +35,7 @@ namespace server.Data
         public DbSet<Product> products { get; set; }
         public DbSet<ProductReview> productReviews { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
-        public DbSet<Image> images { get; set; }
+        public DbSet<Image> Images { get; set; }
 
     }
 }

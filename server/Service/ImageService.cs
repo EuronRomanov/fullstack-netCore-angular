@@ -17,17 +17,17 @@ namespace server.Service
 
         public async Task DeleteImageAsync(int id)
         {
-            Image image = await imageRepository.GetByIdAsync(id);
+            Image? image = await imageRepository.GetByIdAsync(id);
 
             if (image == null) throw new ArgumentNullException($"No image found with id {id}");
 
             var contentPath = enviroment.ContentRootPath;
-            var imagePath = contentPath + "Uploads";
+            var imagePath = Path.Combine(contentPath, "Uploads");
             var fileNameWithPath = Path.Combine(imagePath, image.ImageUrl);
 
 
 
-            if (!Directory.Exists(imagePath))
+            if (Directory.Exists(imagePath))
             {
                 Directory.Delete(imagePath);
             }
@@ -44,7 +44,7 @@ namespace server.Service
             if (file == null) throw new ArgumentNullException("File is empty");
 
             var contentPath = enviroment.ContentRootPath;
-            var imagePath = contentPath + "Uploads";
+            var imagePath = Path.Combine(contentPath,"Uploads");
 
             if (!Directory.Exists(imagePath))
             {
