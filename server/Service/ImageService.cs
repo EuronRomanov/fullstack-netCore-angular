@@ -53,7 +53,7 @@ namespace server.Service
             }
 
             var imageName = file.FileName;
-           var imageExt = Path.GetExtension(imageName); // ".jpg"
+           var imageExt = Path.GetExtension(imageName)?? string.Empty;  // ".jpg"
             var fileName = $"{Guid.NewGuid()}{imageExt}"; // ✅ "guid.jpg"
             var fileNameWithPath = Path.Combine(imagePath, fileName);
 
