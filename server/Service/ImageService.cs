@@ -27,10 +27,11 @@ namespace server.Service
 
 
 
-            if (Directory.Exists(imagePath))
-            {
-                Directory.Delete(imagePath);
-            }
+               // ✅ Borrar solo el archivo específico
+    if (System.IO.File.Exists(fileNameWithPath))
+    {
+        System.IO.File.Delete(fileNameWithPath);
+    }
 
             await imageRepository.DeleteAsync(image);
 
@@ -52,8 +53,8 @@ namespace server.Service
             }
 
             var imageName = file.FileName;
-            var imageExt = Path.GetExtension(imageName);
-            var fileName = $"{Guid.NewGuid().ToString()}.{imageExt}";
+           var imageExt = Path.GetExtension(imageName); // ".jpg"
+            var fileName = $"{Guid.NewGuid()}{imageExt}"; // ✅ "guid.jpg"
             var fileNameWithPath = Path.Combine(imagePath, fileName);
 
             using var fileStream = new FileStream(fileNameWithPath, FileMode.Create);
