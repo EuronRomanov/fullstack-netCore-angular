@@ -20,11 +20,11 @@ namespace server.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Image>>Upload(IFormFile file)
-        {
-            Image image = await imageService.SaveImageAsync(file);
-            return Ok(mapper.Map<ImageDtoRes>(image));
-        }
+public async Task<ActionResult<ImageDtoRes>> Upload([FromForm] IFormFile file)
+{
+    Image image = await imageService.SaveImageAsync(file);
+    return Ok(mapper.Map<ImageDtoRes>(image));
+}
 
 
         [HttpDelete("{id}")]
