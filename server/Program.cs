@@ -22,6 +22,9 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 
+// ✅ AutoMapper (FALTABA)
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+
 // JWT
 var key = Encoding.UTF8.GetBytes(configuration["Jwt:Key"]!);
 
@@ -52,7 +55,7 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IImageRepository, ImageRepository>();
 builder.Services.AddScoped<IImageService, ImageService>();
 
-builder.Services.AddAutoMapper(typeof(MappingProfile));
+
 
 builder.Services.AddCors(options =>
 {
