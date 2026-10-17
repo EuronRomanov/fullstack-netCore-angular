@@ -20,7 +20,8 @@ namespace server.Controllers
         }
 
         [HttpPost]
-public async Task<ActionResult<ImageDtoRes>> Upload([FromForm] IFormFile file)
+        [Consumes("multipart/form-data")]
+public async Task<ActionResult<ImageDtoRes>> Upload( IFormFile file)
 {
     Image image = await imageService.SaveImageAsync(file);
     return Ok(mapper.Map<ImageDtoRes>(image));

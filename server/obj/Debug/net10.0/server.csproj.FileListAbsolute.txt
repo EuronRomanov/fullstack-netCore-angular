@@ -175,3 +175,4 @@ C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\ref\server.dll
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\AutoMapper.dll
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

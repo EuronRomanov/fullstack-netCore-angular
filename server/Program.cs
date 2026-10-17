@@ -10,6 +10,7 @@ using server.Interface.Repository;
 using server.Service;
 using server.Interface.Service;
 using Microsoft.Extensions.FileProviders;
+using server.Mapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
