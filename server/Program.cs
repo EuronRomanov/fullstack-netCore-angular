@@ -104,10 +104,17 @@ app.UseAuthentication(); // CRÍTICO: Faltaba
 app.UseAuthorization();
 
 
+// ✅ Crear la carpeta Uploads si no existe (antes de UseStaticFiles)
+var uploadsPath = Path.Combine(builder.Environment.ContentRootPath, "Uploads");
+if (!Directory.Exists(uploadsPath))
+{
+    Directory.CreateDirectory(uploadsPath);
+}
+
 app.UseStaticFiles(new StaticFileOptions
 {
-    FileProvider=new PhysicalFileProvider(Path.Combine(builder.Environment.ContentRootPath,"Uploads")),
-    RequestPath="/image"
+    FileProvider = new PhysicalFileProvider(uploadsPath),
+    RequestPath = "/image"
 });
 
 
