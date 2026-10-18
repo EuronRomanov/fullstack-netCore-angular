@@ -24,7 +24,7 @@ builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 
 // ✅ AutoMapper (FALTABA)
-builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddAutoMapper(cfg=> { },typeof(MappingProfile));
 
 // JWT
 var key = Encoding.UTF8.GetBytes(configuration["Jwt:Key"]!);

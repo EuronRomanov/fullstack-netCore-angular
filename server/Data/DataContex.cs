@@ -19,6 +19,8 @@ namespace server.Data
 
             string ConnectionStrings = string.Format(conn, dbName, dbUser, dbUserPassword);
             optionsBuilder.UseSqlServer(ConnectionStrings);
+
+
             base.OnConfiguring(optionsBuilder);
         }
 
@@ -27,6 +29,25 @@ namespace server.Data
         {
             modelBuilder.Entity<ProductReview>().HasOne(r=>r.Product).WithMany(p=>p.ProductReviews).HasForeignKey(r=>r.ProductId);
             modelBuilder.Entity<Product>().Property(p=>p.Price).HasPrecision(18,2);
+            
+            modelBuilder.Entity<Product>()
+                .HasOne(p => p.Thumbnail)
+                .WithOne(i => i.Product)
+                .HasForeignKey<Product>(p => p.ThumbnailId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Category>()
+                .HasOne(p => p.Image)
+                .WithOne(i => i.Category)
+                .HasForeignKey<Category>(p => p.ImageId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Brand>()
+                .HasOne(p => p.Image)
+                .WithOne(i => i.Brand)
+                .HasForeignKey<Brand>(p => p.ImageId)
+                .OnDelete(DeleteBehavior.NoAction);
+
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<User> users{get; set;}

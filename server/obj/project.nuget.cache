@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "p8AX5Fw2/I8=",
+  "dgSpecHash": "KIi19xdyrrg=",
   "success": true,
   "projectFilePath": "C:\\Users\\pc1\\Documents\\EShop\\server\\server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc1\\.nuget\\packages\\automapper\\16.2.0\\automapper.16.2.0.nupkg.sha512",
-    "C:\\Users\\pc1\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\pc1\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\pc1\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
     "C:\\Users\\pc1\\.nuget\\packages\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
@@ -66,18 +65,5 @@
     "C:\\Users\\pc1\\.nuget\\packages\\system.security.cryptography.pkcs\\10.0.13\\system.security.cryptography.pkcs.10.0.13.nupkg.sha512",
     "C:\\Users\\pc1\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.11\\system.security.cryptography.protecteddata.9.0.11.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "message": "Se detectó una versión del paquete fuera de la restricción de dependencia: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requiere AutoMapper (= 12.0.1), pero la versión AutoMapper 16.2.0 ya se resolvió.",
-      "projectPath": "C:\\Users\\pc1\\Documents\\EShop\\server\\server.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\pc1\\Documents\\EShop\\server\\server.csproj",
-      "libraryId": "AutoMapper",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "logs": []
 }

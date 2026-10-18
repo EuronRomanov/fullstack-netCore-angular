@@ -7,6 +7,9 @@
         public string ImageName { get; set; }
         public string ImageNameExt { get; set; }
 
+        public Category Category { get; set; }
+        public Brand Brand { get; set; }
+        public Product Product { get; set; }
 
 
     }

@@ -36,6 +36,9 @@ namespace server.Migrations
                     b.Property<int>("CreatedBy")
                         .HasColumnType("int");
 
+                    b.Property<int>("ImageId")
+                        .HasColumnType("int");
+
                     b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -54,6 +57,9 @@ namespace server.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ImageId")
+                        .IsUnique();
 
                     b.ToTable("brand");
                 });
@@ -72,6 +78,9 @@ namespace server.Migrations
                     b.Property<int>("CreatedBy")
                         .HasColumnType("int");
 
+                    b.Property<int>("ImageId")
+                        .HasColumnType("int");
+
                     b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -91,7 +100,35 @@ namespace server.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ImageId")
+                        .IsUnique();
+
                     b.ToTable("categories");
+                });
+
+            modelBuilder.Entity("server.Entities.Image", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ImageName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageNameExt")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Images");
                 });
 
             modelBuilder.Entity("server.Entities.Product", b =>
@@ -147,6 +184,9 @@ namespace server.Migrations
                     b.Property<int>("StackQuantity")
                         .HasColumnType("int");
 
+                    b.Property<int>("ThumbnailId")
+                        .HasColumnType("int");
+
                     b.Property<int>("TotalReviews")
                         .HasColumnType("int");
 
@@ -155,6 +195,9 @@ namespace server.Migrations
                     b.HasIndex("BrandId");
 
                     b.HasIndex("CategoryId");
+
+                    b.HasIndex("ThumbnailId")
+                        .IsUnique();
 
                     b.ToTable("products");
                 });
@@ -253,6 +296,28 @@ namespace server.Migrations
                     b.ToTable("users");
                 });
 
+            modelBuilder.Entity("server.Entities.Brand", b =>
+                {
+                    b.HasOne("server.Entities.Image", "Image")
+                        .WithOne("Brand")
+                        .HasForeignKey("server.Entities.Brand", "ImageId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Image");
+                });
+
+            modelBuilder.Entity("server.Entities.Category", b =>
+                {
+                    b.HasOne("server.Entities.Image", "Image")
+                        .WithOne("Category")
+                        .HasForeignKey("server.Entities.Category", "ImageId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Image");
+                });
+
             modelBuilder.Entity("server.Entities.Product", b =>
                 {
                     b.HasOne("server.Entities.Brand", "Brand")
@@ -267,9 +332,17 @@ namespace server.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("server.Entities.Image", "Thumbnail")
+                        .WithOne("Product")
+                        .HasForeignKey("server.Entities.Product", "ThumbnailId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
                     b.Navigation("Brand");
 
                     b.Navigation("Category");
+
+                    b.Navigation("Thumbnail");
                 });
 
             modelBuilder.Entity("server.Entities.ProductReview", b =>
@@ -292,6 +365,18 @@ namespace server.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("server.Entities.Image", b =>
+                {
+                    b.Navigation("Brand")
+                        .IsRequired();
+
+                    b.Navigation("Category")
+                        .IsRequired();
+
+                    b.Navigation("Product")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("server.Entities.Product", b =>
