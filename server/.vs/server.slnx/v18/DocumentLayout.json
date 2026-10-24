@@ -51,8 +51,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-14T21:10:05.539Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -62,7 +61,7 @@
               "RelativeDocumentMoniker": "Service\\CatalogService.cs",
               "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Service\\CatalogService.cs",
               "RelativeToolTip": "Service\\CatalogService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAuwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-18T21:33:15.727Z",
               "EditorCaption": ""
@@ -77,8 +76,7 @@
               "RelativeToolTip": "Interface\\Service\\ICatalogService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T21:30:20.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T21:30:20.56Z"
             },
             {
               "$type": "Document",
@@ -90,8 +88,7 @@
               "RelativeToolTip": "Repository\\BrandRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T21:24:57.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T21:24:57.821Z"
             },
             {
               "$type": "Document",
@@ -103,8 +100,7 @@
               "RelativeToolTip": "Repository\\CategoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T21:17:30.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T21:17:30.335Z"
             },
             {
               "$type": "Document",
@@ -116,8 +112,7 @@
               "RelativeToolTip": "Interface\\Repository\\IBrandRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T21:08:51.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T21:08:51.296Z"
             },
             {
               "$type": "Document",
@@ -129,8 +124,7 @@
               "RelativeToolTip": "Interface\\Repository\\ICategoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T21:07:35.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T21:07:35.224Z"
             }
           ]
         }

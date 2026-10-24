@@ -1,4 +1,5 @@
-﻿using server.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using server.Data;
 using server.Entities;
 using server.Interface.Repository;
 
@@ -11,6 +12,10 @@ namespace server.Repository
         {
             this.contex = contex;
 
+        }
+         public async  Task<IEnumerable<Category>> GetAllIncludingImage()
+        {
+            return await contex.categories.Include(b=>b.Image).ToListAsync();
         }
     }
 }

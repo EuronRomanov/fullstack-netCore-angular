@@ -34,24 +34,24 @@ namespace server.Data
                 .HasOne(p => p.Thumbnail)
                 .WithOne(i => i.Product)
                 .HasForeignKey<Product>(p => p.ThumbnailId)
-                .OnDelete(DeleteBehavior.NoAction);
+                .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<Category>()
                 .HasOne(p => p.Image)
                 .WithOne(i => i.Category)
                 .HasForeignKey<Category>(p => p.ImageId)
-                .OnDelete(DeleteBehavior.NoAction);
+                .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<Brand>()
                 .HasOne(p => p.Image)
                 .WithOne(i => i.Brand)
                 .HasForeignKey<Brand>(p => p.ImageId)
-                .OnDelete(DeleteBehavior.NoAction);
+                .OnDelete(DeleteBehavior.SetNull);
 
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<User> users{get; set;}
-        public DbSet<Brand> brand { get; set; }
+        public DbSet<Brand> brands { get; set; }
         public DbSet<Category> categories { get; set; }
         public DbSet<Product> products { get; set; }
         public DbSet<ProductReview> productReviews { get; set; }

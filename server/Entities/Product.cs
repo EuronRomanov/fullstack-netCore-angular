@@ -5,6 +5,9 @@ namespace server.Entities
     public class Product:AuditBaseEntity
     {
 
+
+
+
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
@@ -12,7 +15,9 @@ namespace server.Entities
         public int  StackQuantity{ get; set; }
         public double AverageRating { get; set; }
         public int TotalReviews { get; set; }
-        public bool InStock { get; set; }
+        public bool InStock { 
+            get{return StackQuantity>0?true:false;}  
+            }
         public bool InFeatured { get; set; }=false;
         public int CategoryId { get; set; }
 
@@ -25,7 +30,7 @@ namespace server.Entities
 
 
         public int ThumbnailId { get; set; }
-        public Image Thumbnail { get; set; }
+        public Image? Thumbnail { get; set; }
 
 
 

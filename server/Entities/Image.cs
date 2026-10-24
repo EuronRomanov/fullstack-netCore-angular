@@ -1,4 +1,6 @@
-﻿namespace server.Entities
+﻿using System.Text.Json.Serialization;
+
+namespace server.Entities
 {
     public class Image
     {
@@ -7,9 +9,12 @@
         public string ImageName { get; set; }
         public string ImageNameExt { get; set; }
 
+        [JsonIgnore]
         public Category Category { get; set; }
-        public Brand Brand { get; set; }
-        public Product Product { get; set; }
+         [JsonIgnore]
+         public Brand Brand { get; set; }
+        [JsonIgnore]
+         public Product Product { get; set; }
 
 
     }
