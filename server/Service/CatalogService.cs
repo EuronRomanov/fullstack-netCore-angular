@@ -71,7 +71,11 @@ namespace server.Service
             Brand? brand=await this.brandRepository.GetByIdAsync(brandId);
             if(brand==null){throw new Exception($"Invalid Brand Id ${brandId}");};
 
-            await imageService.DeleteImageAsync(brand.ImageId);
+            //await imageService.DeleteImageAsync(brand.ImageId);
+            if (brand.ImageId > 0)
+            {
+                await imageService.DeleteImageAsync(brand.ImageId);
+            }
             await brandRepository.DeleteAsync(brand);
 
         }
@@ -80,7 +84,11 @@ namespace server.Service
         {
             Category? category=await this.categoryRepository.GetByIdAsync(categorytId);
              if(category==null){throw new Exception($"Invalid Category Id {categorytId}");};
-  await imageService.DeleteImageAsync(category.ImageId);
+ 
+  if (category.ImageId > 0)
+{
+     await imageService.DeleteImageAsync(category.ImageId);
+}
             await categoryRepository.DeleteAsync(category);
         }
 
