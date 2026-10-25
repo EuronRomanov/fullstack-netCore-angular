@@ -72,9 +72,9 @@ namespace server.Service
             if(brand==null){throw new Exception($"Invalid Brand Id ${brandId}");};
 
             //await imageService.DeleteImageAsync(brand.ImageId);
-            if (brand.ImageId > 0)
+            if (brand.ImageId.HasValue && brand.ImageId > 0)
             {
-                await imageService.DeleteImageAsync(brand.ImageId);
+                await imageService.DeleteImageAsync(brand.ImageId.Value);
             }
             await brandRepository.DeleteAsync(brand);
 
@@ -85,9 +85,9 @@ namespace server.Service
             Category? category=await this.categoryRepository.GetByIdAsync(categorytId);
              if(category==null){throw new Exception($"Invalid Category Id {categorytId}");};
  
-  if (category.ImageId > 0)
+  if (category.ImageId.HasValue && category.ImageId > 0)
 {
-     await imageService.DeleteImageAsync(category.ImageId);
+     await imageService.DeleteImageAsync(category.ImageId.Value);
 }
             await categoryRepository.DeleteAsync(category);
         }
@@ -96,7 +96,10 @@ namespace server.Service
         {
            Product? product=await this.productRepository.GetByIdAsync(productId);
              if(product==null){throw new Exception($"Invalid Product Id {productId}");};
-            await imageService.DeleteImageAsync(product.ThumbnailId);
+            if (product.ThumbnailId.HasValue && product.ThumbnailId > 0){
+                await imageService.DeleteImageAsync(product.ThumbnailId.Value);
+            }
+                
             await productRepository.DeleteAsync(product);
         }
 

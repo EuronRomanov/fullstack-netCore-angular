@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\pc1\\Documents\\EShop\\server\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pc1\\Documents\\EShop\\server\\Migrations\\20261025051833_CatalogDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20261025051833_CatalogDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\service\\catalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:service\\catalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -42,7 +46,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IImageService.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Interface\\Service\\IImageService.cs",
               "RelativeDocumentMoniker": "Interface\\Service\\IImageService.cs",
@@ -56,19 +60,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20261025051833_CatalogDB.cs",
+              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Migrations\\20261025051833_CatalogDB.cs",
+              "RelativeDocumentMoniker": "Migrations\\20261025051833_CatalogDB.cs",
+              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Migrations\\20261025051833_CatalogDB.cs",
+              "RelativeToolTip": "Migrations\\20261025051833_CatalogDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T05:18:41.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CatalogService.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Service\\CatalogService.cs",
               "RelativeDocumentMoniker": "Service\\CatalogService.cs",
               "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Service\\CatalogService.cs",
               "RelativeToolTip": "Service\\CatalogService.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAuwBMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAwwGUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-18T21:33:15.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ICatalogService.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Interface\\Service\\ICatalogService.cs",
               "RelativeDocumentMoniker": "Interface\\Service\\ICatalogService.cs",
@@ -80,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BrandRepository.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Repository\\BrandRepository.cs",
               "RelativeDocumentMoniker": "Repository\\BrandRepository.cs",
@@ -92,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Repository\\CategoryRepository.cs",
               "RelativeDocumentMoniker": "Repository\\CategoryRepository.cs",
@@ -104,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IBrandRepository.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Interface\\Repository\\IBrandRepository.cs",
               "RelativeDocumentMoniker": "Interface\\Repository\\IBrandRepository.cs",
@@ -116,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ICategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Interface\\Repository\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "Interface\\Repository\\ICategoryRepository.cs",

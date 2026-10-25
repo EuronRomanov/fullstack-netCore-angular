@@ -36,12 +36,8 @@ namespace server.Migrations
                     b.Property<int>("CreatedBy")
                         .HasColumnType("int");
 
-                    b.Property<int>("ImageId")
+                    b.Property<int?>("ImageId")
                         .HasColumnType("int");
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -59,9 +55,10 @@ namespace server.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ImageId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[ImageId] IS NOT NULL");
 
-                    b.ToTable("brand");
+                    b.ToTable("brands");
                 });
 
             modelBuilder.Entity("server.Entities.Category", b =>
@@ -78,12 +75,8 @@ namespace server.Migrations
                     b.Property<int>("CreatedBy")
                         .HasColumnType("int");
 
-                    b.Property<int>("ImageId")
+                    b.Property<int?>("ImageId")
                         .HasColumnType("int");
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -101,7 +94,8 @@ namespace server.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ImageId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[ImageId] IS NOT NULL");
 
                     b.ToTable("categories");
                 });
@@ -161,9 +155,6 @@ namespace server.Migrations
                     b.Property<bool>("InFeatured")
                         .HasColumnType("bit");
 
-                    b.Property<bool>("InStock")
-                        .HasColumnType("bit");
-
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -184,7 +175,7 @@ namespace server.Migrations
                     b.Property<int>("StackQuantity")
                         .HasColumnType("int");
 
-                    b.Property<int>("ThumbnailId")
+                    b.Property<int?>("ThumbnailId")
                         .HasColumnType("int");
 
                     b.Property<int>("TotalReviews")
@@ -197,7 +188,8 @@ namespace server.Migrations
                     b.HasIndex("CategoryId");
 
                     b.HasIndex("ThumbnailId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[ThumbnailId] IS NOT NULL");
 
                     b.ToTable("products");
                 });
@@ -301,8 +293,7 @@ namespace server.Migrations
                     b.HasOne("server.Entities.Image", "Image")
                         .WithOne("Brand")
                         .HasForeignKey("server.Entities.Brand", "ImageId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Image");
                 });
@@ -312,8 +303,7 @@ namespace server.Migrations
                     b.HasOne("server.Entities.Image", "Image")
                         .WithOne("Category")
                         .HasForeignKey("server.Entities.Category", "ImageId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Image");
                 });
@@ -335,8 +325,7 @@ namespace server.Migrations
                     b.HasOne("server.Entities.Image", "Thumbnail")
                         .WithOne("Product")
                         .HasForeignKey("server.Entities.Product", "ThumbnailId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Brand");
 
@@ -369,14 +358,11 @@ namespace server.Migrations
 
             modelBuilder.Entity("server.Entities.Image", b =>
                 {
-                    b.Navigation("Brand")
-                        .IsRequired();
+                    b.Navigation("Brand");
 
-                    b.Navigation("Category")
-                        .IsRequired();
+                    b.Navigation("Category");
 
-                    b.Navigation("Product")
-                        .IsRequired();
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("server.Entities.Product", b =>
