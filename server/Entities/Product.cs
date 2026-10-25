@@ -29,7 +29,7 @@ namespace server.Entities
         public ICollection<ProductReview> ProductReviews { get; set; }
 
 
-        public int ThumbnailId { get; set; }
+        public int? ThumbnailId { get; set; }
         public Image? Thumbnail { get; set; }
 
 
