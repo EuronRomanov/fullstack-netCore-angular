@@ -8,6 +8,6 @@
        // public string ImageUrl { get; set; }
 
         public int ImageId { get; set; }
-        public Image Image { get; set; }
+        public Image? Image { get; set; }
     }
 }
