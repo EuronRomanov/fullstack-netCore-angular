@@ -151,7 +151,7 @@ return BadRequest(response);
 
         
         [HttpDelete]
-        [Route("category/delete/{categorytId}")]
+        [Route("category/delete/{categoryId}")]
         public async Task<ActionResult<ResponseDto>> DeleteCategory(int categoryId)
         {
             ResponseDto response=new ResponseDto();
