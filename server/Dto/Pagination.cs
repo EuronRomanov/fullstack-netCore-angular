@@ -10,7 +10,7 @@ namespace server.Dto
         public int PageIndex{get; set;}
        public int PageSize{get; set;}
         public long Count{get; set;}
-         public IReadOnlyList<T> Data  {get; set;}
+         public IReadOnlyList<T> Data  {get; set;}= new List<T>();
 
 
 
