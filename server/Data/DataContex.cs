@@ -31,10 +31,10 @@ namespace server.Data
             modelBuilder.Entity<Product>().Property(p=>p.Price).HasPrecision(18,2);
             
             modelBuilder.Entity<Product>()
-                .HasOne(p => p.Thumbnail)
-                .WithOne(i => i.Product)
-                .HasForeignKey<Product>(p => p.ThumbnailId)
-                .OnDelete(DeleteBehavior.SetNull);
+        .HasOne(p => p.Thumbnail)
+        .WithOne(i => i.Product) 
+        .HasForeignKey<Product>(p => p.ThumbnailId)
+        .OnDelete(DeleteBehavior.SetNull); // ✅ SetNull en lugar de NoAction
 
             modelBuilder.Entity<Category>()
                 .HasOne(p => p.Image)
