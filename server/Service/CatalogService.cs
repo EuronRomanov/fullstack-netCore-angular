@@ -14,14 +14,14 @@ namespace server.Service
         private readonly IProductRepository productRepository;
         private readonly ICategoryRepository categoryRepository;
         private readonly IBrandRepository brandRepository;
-        private readonly ImageService imageService;
+        private readonly IImageService imageService;
 
         private readonly IMapper mapper;
 
         public CatalogService(IProductRepository productRepository,
             ICategoryRepository categoryRepository,
             IBrandRepository brandRepository,
-            ImageService imageService,
+            IImageService imageService,
             IMapper mapper)
         {
             this.productRepository = productRepository;
