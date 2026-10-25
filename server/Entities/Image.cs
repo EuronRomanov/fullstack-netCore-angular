@@ -10,11 +10,11 @@ namespace server.Entities
         public string ImageNameExt { get; set; }= string.Empty;
 
         [JsonIgnore]
-        public Category Category { get; set; }
+        public Category? Category { get; set; }
          [JsonIgnore]
-         public Brand Brand { get; set; }
+         public Brand? Brand { get; set; }
         [JsonIgnore]
-         public Product Product { get; set; }
+         public Product? Product { get; set; }
 
 
     }
