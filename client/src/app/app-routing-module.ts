@@ -7,11 +7,15 @@ const routes: Routes = [
   {
     path:"",
     component:Home,
-    pathMatch:'full',
+    
     children:[
       {
         path:"",
         component:HomePage
+      },
+      {
+        path:"products",
+        loadChildren:()=>import('./products/products-module').then(m=>m.ProductsModule)
       }
     ]
   }
