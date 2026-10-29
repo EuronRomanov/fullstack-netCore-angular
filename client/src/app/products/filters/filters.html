@@ -1,0 +1,27 @@
+<div class="filter-container">
+    <div class="filter-header mb-5 mt-3">
+        <h4>
+            Filters
+        </h4>
+    </div>
+    <div class="filter-section">
+        <h3>Categories</h3>
+        <div class="select-checkbox">
+            <p *ngFor="let catory of categories">
+                <mat-checkbox>{{catory.name}}</mat-checkbox>
+            </p>
+        </div>
+    </div>
+    <div class="filter-section">
+        <h3>Brands</h3>
+        <div class="select-checkbox">
+            <p *ngFor="let brand of brands">
+                <mat-checkbox>{{brand.name}}</mat-checkbox>
+            </p>
+        </div>
+    </div>
+    <div class="filter-section"><h3>Stock</h3></div>
+    <div class="filter-section"><h3>Price</h3></div>
+    <div class="filter-section"><h3>Rating</h3></div>
+
+</div>
