@@ -1,0 +1,22 @@
+<div class="row align-items-center">
+    <span class="products-found col-6"> 24 Products found</span>
+
+    <div class="sort-dropdown col-6 row">
+        <div class="col-6">
+            <mat-form-field appearance="outline" class="show-dropdown">
+                <mat-label>Show</mat-label>
+                <mat-select [(value)]="itemsToShow" (selectionChange)="itemsToShowChange($event)">
+                    <mat-option *ngFor="let option of showOptions" [value]="option">{{option}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+         <div class="col-6">
+            <mat-form-field appearance="outline" class="show-dropdown">
+                <mat-label>Sort by</mat-label>
+                <mat-select [(value)]="sortBy" (selectionChange)="sortByChange($event)">
+                    <mat-option *ngFor="let option of sortOptions" [value]="option">{{option}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+</div>

@@ -8,24 +8,26 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { Filters } from './filters/filters';
 
-import { MatCheckboxModule } from "@angular/material/checkbox";
-import { MatButtonToggleModule } from "@angular/material/button-toggle";
-import { MatSliderModule } from "@angular/material/slider";
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatSelectModule } from '@angular/material/select';
 import { SharedModule } from '../shared/shared-module';
-
+import { SortHeader } from './sort-header/sort-header';
 
 @NgModule({
-  declarations: [Products, Pagination, Filters],
+  declarations: [Products, Pagination, Filters, SortHeader],
   imports: [
-    CommonModule, 
-    ProductsRoutingModule, 
-    MatButtonModule, 
+    CommonModule,
+    ProductsRoutingModule,
+    MatButtonModule,
     MatIcon,
     MatCheckboxModule,
-   MatButtonToggleModule,
-   MatSliderModule,
-   SharedModule
+    MatButtonToggleModule,
+    MatSliderModule,
+    MatSelectModule,
+    SharedModule,
+
   ],
-   
 })
 export class ProductsModule {}

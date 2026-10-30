@@ -1,9 +1,12 @@
 <div class="container my-5">
     <div class="row">
         <div class="col-3">
-            <app-filters></app-filters>
+            <app-filters (filtersChanged)="filtersChanged($event)"></app-filters>
         </div>
         <div class="col-9">
+            <app-sort-header (sortHeaderChanges)="sortFiltersChanged($event)"></app-sort-header>
+            {{filters| json}}
+            {{ sortFilters| json}}
 <app-pagination [pageItems]="500" [pageSize]="5" [currentPage]="1" (pageChange)="display($event)"></app-pagination>
 
         </div>

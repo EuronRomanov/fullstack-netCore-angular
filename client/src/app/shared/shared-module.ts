@@ -5,11 +5,11 @@ import { MatIcon } from '@angular/material/icon';
 
 
 @NgModule({
-  declarations: [ Rating],
+  declarations: [],
   imports: [
     CommonModule,
-    MatIcon
-   
+    MatIcon,
+    Rating
   ],
   exports: [
     Rating
