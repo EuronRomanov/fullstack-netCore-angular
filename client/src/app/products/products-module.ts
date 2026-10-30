@@ -9,9 +9,23 @@ import { MatIcon } from '@angular/material/icon';
 import { Filters } from './filters/filters';
 
 import { MatCheckboxModule } from "@angular/material/checkbox";
+import { MatButtonToggleModule } from "@angular/material/button-toggle";
+import { MatSliderModule } from "@angular/material/slider";
+import { SharedModule } from '../shared/shared-module';
+
 
 @NgModule({
   declarations: [Products, Pagination, Filters],
-  imports: [CommonModule, ProductsRoutingModule, MatButtonModule, MatIcon,MatCheckboxModule],
+  imports: [
+    CommonModule, 
+    ProductsRoutingModule, 
+    MatButtonModule, 
+    MatIcon,
+    MatCheckboxModule,
+   MatButtonToggleModule,
+   MatSliderModule,
+   SharedModule
+  ],
+   
 })
 export class ProductsModule {}

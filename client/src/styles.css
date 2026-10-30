@@ -3,6 +3,17 @@ html, body {height: 100%;}
 body{margin: 0; font-family: Robote, Helvetica, sans-serif;}
 
 
+:root{
+    --primary-color:#00c853;
+    --secundary-color:#6c757d;
+    --background-color:#f8f9fa;
+    --text-color: #333333;
+    --acent-color:#28a745;
+    --warning-color:#ffc107;
+
+}
+
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
     color: #21313c!important;
     font-weight: 600!important;

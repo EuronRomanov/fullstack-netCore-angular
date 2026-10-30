@@ -44,4 +44,15 @@ export class Filters {
       
     }
   ]
+  minPrice:number=0;
+  maxPrice:number=300;
+
+  ratings=[
+    {value:5,selected:false},
+    {value:4,selected:false},
+    {value:3,selected:false},
+    {value:2,selected:false},
+    {value:1,selected:false}
+
+  ];
 }

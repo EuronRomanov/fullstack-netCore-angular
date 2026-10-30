@@ -20,8 +20,26 @@
             </p>
         </div>
     </div>
-    <div class="filter-section"><h3>Stock</h3></div>
-    <div class="filter-section"><h3>Price</h3></div>
-    <div class="filter-section"><h3>Rating</h3></div>
+    <div class="filter-section">
+        <h3>Stock</h3>
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+             <mat-button-toggle>In-Stock</mat-button-toggle>
+              <mat-button-toggle>Out-of</mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+    <div class="filter-section">
+        <h3>Price</h3>
+        <div class="filter-slider-container"></div>
+        <mat-slider class="filter-slider" [min]="minPrice" [max]="maxPrice">
+            <input matSliderStartThumb>
+             <input matSliderStartThumb>
+        </mat-slider>
+    </div>
+    <div class="filter-section">
+        <h3>Rating</h3>
+        <div *ngFor="let rating of ratings">
+            <s-rating [rating]="rating.value"></s-rating>
+        </div>
+    </div>
 
 </div>
