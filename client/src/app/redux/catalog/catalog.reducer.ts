@@ -15,18 +15,18 @@ const initialState:CatalogState={
 
 export const catalogReducer=createReducer(
     initialState,
-    on(loadCategories,(state)=>({...state})),
+    on(loadCategories,(state)=>({...state, error: null})),
     on(loadCategoriesSucess,(state,{categories})=>(
         {
             ...state,
-            categories,
+            categories: categories,
             error:null
         }
     )),
     on(loadCategoriesFailure,(state,{error})=>(
         {
             ...state,
-            error:null
+            error:error
         }
     ))
 )
