@@ -5,7 +5,7 @@ export const loadCategories=createAction('[Category] Load Categories');
 
 export const loadCategoriesSucess=createAction(
     '[Category] Load Categories Sucess',
-    props<{categories:CategoryResDto}>()
+    props<{categories:CategoryResDto[]}>()
 )
 
 export const loadCategoriesFailure=createAction(
