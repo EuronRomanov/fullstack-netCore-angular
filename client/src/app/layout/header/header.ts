@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { CategoryResDto } from '../../core/Models/catalog';
+import { AppState } from '../../redux/store';
+import { Store } from '@ngrx/store';
+import { selectCategories } from '../../redux/catalog/catalog.selector';
 
 @Component({
   selector: 'app-header',
@@ -15,4 +20,11 @@ export class Header {
     'Camera & Photo',
     'Wearable Technology'
   ]
+
+ 
+  categories$:Observable<CategoryResDto[]>;
+    constructor(private store:Store<AppState>){
+      this.categories$=this.store.select(selectCategories);
+    }
+  
 }

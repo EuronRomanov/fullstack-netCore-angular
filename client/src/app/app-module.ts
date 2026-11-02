@@ -6,8 +6,12 @@ import { Home } from './home/home';
 import { LayoutModule } from './layout/layout-module';
 import { BASE_API } from './core/token/baseUrl.token';
 import { environment } from '../environments/environment';
-import {  provideHttpClient, withInterceptors } from '@angular/common/http';
+import {  HttpClientModule, provideHttpClient, withInterceptors } from '@angular/common/http';
 import { apiInterceptor } from './core/interceptor/api-interceptor';
+import { StoreModule } from '@ngrx/store';
+import { store } from './redux/store';
+import { EffectsModule } from '@ngrx/effects';
+import { CatalogEffects } from './redux/catalog/catalog.effects';
 
 
 
@@ -19,7 +23,9 @@ import { apiInterceptor } from './core/interceptor/api-interceptor';
     BrowserModule, 
     AppRoutingModule, 
     LayoutModule,
-  
+    HttpClientModule,
+  StoreModule.forRoot(store),
+  EffectsModule.forRoot([CatalogEffects])
   ],
   providers: [provideBrowserGlobalErrorListeners(),
     {
