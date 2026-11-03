@@ -23,7 +23,6 @@ import { CatalogEffects } from './redux/catalog/catalog.effects';
     BrowserModule, 
     AppRoutingModule, 
     LayoutModule,
-    HttpClientModule,
   StoreModule.forRoot(store),
   EffectsModule.forRoot([CatalogEffects])
   ],
