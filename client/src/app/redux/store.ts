@@ -6,5 +6,5 @@ export interface AppState{
 }
 
 export const store={
-    catalogStore:catalogReducer
+    catalog:catalogReducer
 }
