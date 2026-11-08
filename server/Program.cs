@@ -20,7 +20,7 @@ try
 {
 
     var builder = WebApplication.CreateBuilder(args);
-
+    builder.Host.UseSerilog();
     IConfiguration configuration = builder.Configuration;
 
     // Base de datos (InMemory por ahora, cambia a SQL Server cuando quieras)
