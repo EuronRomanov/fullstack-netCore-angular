@@ -1,4 +1,5 @@
 export const environment = {
-        baseApi: 'https://localhost:7174/api',
+        baseApi: 'https://localhost:8081/api',
+        baseImageApi: 'http://localhost:8081/image'
 
 };

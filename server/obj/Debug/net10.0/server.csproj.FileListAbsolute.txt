@@ -1,9 +1,11 @@
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\appsettings.json
+C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\server.staticwebassets.runtime.json
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\server.staticwebassets.endpoints.json
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\server.exe
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\server.deps.json
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\server.runtimeconfig.json
+C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\server.runtimeconfig.dev.json
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\server.dll
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\server.pdb
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\AutoMapper.dll
@@ -67,7 +69,6 @@ C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\System.Composition.TypedPa
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\System.Memory.Data.dll
-C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
@@ -158,8 +159,12 @@ C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\runtimes\osx-x64\native\ms
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\runtimes\win-arm64\native\msalruntime_arm64.dll
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\runtimes\win-x64\native\msalruntime.dll
 C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\runtimes\win-x86\native\msalruntime_x86.dll
-C:\Users\pc1\Documents\EShop\server\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\server.csproj.AssemblyReference.cache
+C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\HotReload\Microsoft.NET.Sdk.BlazorWeb.HotReload.lib.module.js
+C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\HotReload\Microsoft.NET.Sdk.BlazorWeb.HotReload.BrowserTools.js
+C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\HotReload\Microsoft.NET.Sdk.BlazorWeb.HotReload.BrowserTools.Config.js
+C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\HotReload\browser-tools-key.public.json
+C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\HotReload\browser-tools-key.private.json
 C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\rpswa.dswa.cache.json
 C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\server.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\server.AssemblyInfoInputs.cache
@@ -171,7 +176,13 @@ C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\server.sourcelink.json
 C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\jsmodules\jsmodules.build.manifest.json
+C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\scopedcss\scopedcss.cache
 C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\scopedcss\bundle\server.styles.css
+C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\compressed\xxiopzyldd-{0}-tchfgznwy8-tchfgznwy8.gz
+C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\compressed\mjyuy428kb-{0}-576tv2u1mc-576tv2u1mc.gz
+C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\compressed\aqz54qbld1-{0}-v1vy2to33n-v1vy2to33n.gz
+C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\compressed\g9gp0teiow-{0}-ysew0n4kjn-ysew0n4kjn.gz
 C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\pc1\Documents\EShop\server\obj\Debug\net10.0\staticwebassets.development.json

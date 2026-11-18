@@ -104,12 +104,12 @@ try
 
 
     // Pipeline HTTP
-    //if (app.Environment.IsDevelopment())
-    //{
+   if (app.Environment.IsDevelopment())
+    {
     app.MapOpenApi();
     app.UseSwagger();
     app.UseSwaggerUI();
-    //}
+   }
 
     app.UseHttpsRedirection();
 

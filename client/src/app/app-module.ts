@@ -6,13 +6,13 @@ import { Home } from './home/home';
 import { LayoutModule } from './layout/layout-module';
 import { BASE_API } from './core/token/baseUrl.token';
 import { environment } from '../environments/environment';
-import {  HttpClientModule, provideHttpClient, withInterceptors } from '@angular/common/http';
+import {  provideHttpClient, withInterceptors } from '@angular/common/http';
 import { apiInterceptor } from './core/interceptor/api-interceptor';
 import { StoreModule } from '@ngrx/store';
 import { store } from './redux/store';
 import { EffectsModule } from '@ngrx/effects';
 import { CatalogEffects } from './redux/catalog/catalog.effects';
-
+import { BASE_IMAGE_API } from './core/token/baseImage.token';
 
 
 
@@ -30,6 +30,10 @@ import { CatalogEffects } from './redux/catalog/catalog.effects';
     {
       provide:BASE_API,
       useValue:environment.baseApi
+    },
+    {
+      provide:BASE_IMAGE_API,
+      useValue:environment.baseImageApi
     },
     provideHttpClient(
       withInterceptors([

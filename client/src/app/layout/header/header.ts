@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component ,Inject} from '@angular/core';
 import { Observable } from 'rxjs';
 import { CategoryResDto } from '../../core/Models/catalog';
 import { AppState } from '../../redux/store';
 import { Store } from '@ngrx/store';
 import { selectCategories } from '../../redux/catalog/catalog.selector';
+import { BASE_IMAGE_API } from '../../core/token/baseImage.token';
 
 @Component({
   selector: 'app-header',
@@ -23,7 +24,9 @@ export class Header {
 
  
   categories$:Observable<CategoryResDto[]>;
-    constructor(private store:Store<AppState>){
+    constructor(private store:Store<AppState>,
+      @Inject(BASE_IMAGE_API) public imageApi:string
+    ){
       this.categories$=this.store.select(selectCategories);
     }
   

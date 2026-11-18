@@ -32,6 +32,7 @@
                     </button>
                     <mat-menu #menu="matMenu">
                         <button mat-menu-item *ngFor="let cat of categories">
+                          
                             <span>{{cat}}</span>
                         </button>
 
@@ -44,6 +45,11 @@
                     </button>
                     <mat-menu #menu="matMenu">
                         <button mat-menu-item *ngFor="let cat of categories$|async">
+                            <img
+                            [src]="imageApi + '/' + cat.image?.imageUrl"
+                            [alt]="cat.name"
+                            style="width: 30px; margin-right: 10px; border-radius: 50%;"
+                            />
                             <span>{{cat.name}}</span>
                         </button>
 
