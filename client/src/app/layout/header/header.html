@@ -43,7 +43,7 @@
                         <mat-icon>grid_view</mat-icon>
                         Categories Redux
                     </button>
-                    <mat-menu #menu="matMenu">
+                    <mat-menu #menuredux="matMenu">
                         <button mat-menu-item *ngFor="let cat of categories$|async">
                             <img
                             [src]="imageApi + '/' + cat.image?.imageUrl"

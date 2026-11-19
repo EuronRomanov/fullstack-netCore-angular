@@ -1,9 +1,17 @@
-import { Component ,signal} from '@angular/core';
+import { Component ,signal,Inject,OnInit} from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CarouselModule as owlCarouselModule } from 'ngx-owl-carousel-o';
 import {MatCardModule} from '@angular/material/card';
 import { CommonModule } from '@angular/common';
+
+ import { Store } from '@ngrx/store';
+ import { Observable } from 'rxjs';
+ import { CategoryResDto } from '../core/Models/catalog';
+ import { AppState } from '../redux/store';
+ import { selectCategories } from '../redux/catalog/catalog.selector';
+import { BASE_IMAGE_API } from '../core/token/baseImage.token';
+  
 
 @Component({
   selector: 'app-home-page',
@@ -17,9 +25,22 @@ import { CommonModule } from '@angular/common';
    MatCardModule
   ]
 })
-export class HomePage {
-  myInterval:number=1000
+export class HomePage implements OnInit {
+  myInterval:number=1000;
+
+  categories$:Observable<CategoryResDto[]>;
   
+ constructor(
+  private store:Store<AppState>,
+  @Inject(BASE_IMAGE_API) public imageApi:string
+ ){
+  this.categories$=this.store.select(selectCategories);
+ }
+
+ ngOnInit(): void {
+   
+ }
+
    customOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,
@@ -45,15 +66,6 @@ export class HomePage {
     nav: false,
     autoplay:true,
     autoplaySpeed:1000
-  }
-   slidesStore = signal<any[]>([
-    { id: '1', src: 'assets/Audio&HomeTheater.jpg', alt: 'Audio & Home Theater', title: 'Audio & Home Theater' },
-    { id: '2', src: 'assets/Camera.jpg', alt: 'Camera', title: 'Camera' },
-    { id: '3', src: 'assets/Computers.jpg', alt: 'Computers', title: 'Computers' },
-    { id: '4', src: 'assets/smarthphone.jpg', alt: 'Mobile', title: 'Mobile' },
-    { id: '5', src: 'assets/smartTv.jpg', alt: 'TV & video', title: 'TV & video' },
-    { id: '6', src: 'assets/smartwatch.jpg', alt: 'Wearable Technology', title: 'Wearable Technology' },
-
-  ]);
+  };
 
 }

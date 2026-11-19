@@ -22,15 +22,15 @@
         <div class="row">
             <owl-carousel-o [options]="customOptions">
 
-                @for (slide of slidesStore(); track slide.id) {
-                <ng-template carouselSlide [id]="slide.id">
+                @for (cat of categories$ | async; track cat.id) {
+                <ng-template carouselSlide [id]="cat.id.toString()">
 
                     <mat-card class="owl-c-card" appearance="outlined">
 
-                        <img mat-card-image class="own-c-img" [src]="slide.src" [alt]="slide.alt">
+                        <img mat-card-image class="own-c-img" [src]="imageApi + '/' + cat.image?.imageUrl" [alt]="cat.name">
                         <mat-card-content class="text-center">
                             <p>
-                                {{slide.title}}
+                                {{cat.name}}
                             </p>
                         </mat-card-content>
                     </mat-card>
