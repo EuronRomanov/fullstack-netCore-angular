@@ -7,10 +7,13 @@ import { Catalog } from "../../core/Services/catalog";
 
 @Injectable()
 export class CatalogEffects {
-    constructor(private action$:Actions,private catalogService:Catalog) {}
+    constructor(
+      private actions$:Actions,
+      private catalogService:Catalog
+    ) {}
 
     loadCategories$=createEffect(()=>
-    this.action$.pipe(
+    this.actions$.pipe(
         ofType(loadCategories),
         mergeMap(()=>
          this.catalogService.getCategories().pipe(

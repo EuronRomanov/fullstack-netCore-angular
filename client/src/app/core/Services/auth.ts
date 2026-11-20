@@ -3,11 +3,13 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable,tap } from 'rxjs'; 
 
-@Service()
+@Injectable({
+ providedIn:'root'
+})
 export class AuthService {
 private apiUrl='/api/auth';
 
-constuctor(private http: HttpClient){}
+constructor(private http: HttpClient){}
 
 
 login(credentials:any):Observable<any>{
@@ -19,6 +21,32 @@ login(credentials:any):Observable<any>{
         })
     );
 }
+
+
+refreshToken(refreshToken:string,accessToken:string):Observable<any>{
+    return this.http.post<any>(`${this.apiUrl}/refresh`,{refreshToken,accessToken});
+}
+
+    saveTokens(accessToken: string, refreshToken: string) {
+        localStorage.setItem('accessToken',accessToken);
+        localStorage.setItem('refreshtoken',refreshToken);
+    }
+
+
+    
+     getAccessToken() : string | null {
+        return localStorage.getItem('accessToken');
+    }
+    
+    getRefreshToken() : string | null {
+        return localStorage.getItem('refreshToken');
+    }
+
+
+    logout(){
+        localStorage.removeItem('accessToken');
+        localStorage.removeItem('refreshToken');
+    }
 
 
 }
