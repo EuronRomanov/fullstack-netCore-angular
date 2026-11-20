@@ -10,22 +10,36 @@ export class CatalogEffects {
     constructor(
       private actions$:Actions,
       private catalogService:Catalog
-    ) {}
+    ) {
+      console.log('actions inyectado:', this.actions$);
+      console.log('CatalogService inyectado:',this.catalogService);
+    }
 
-    loadCategories$=createEffect(()=>
-    this.actions$.pipe(
+    loadCategories$=createEffect(()=>{
+
+
+if(!this.actions$){
+  console.log("El servicio Actions es undifined.Revisa AppModule");
+  throw new Error("Actions service not injected");
+}
+
+   return  this.actions$.pipe(
         ofType(loadCategories),
-        mergeMap(()=>
-         this.catalogService.getCategories().pipe(
+        mergeMap(()=>{
+          console.log('Effect disparado,llamando al servicio...');
+         return this.catalogService.getCategories().pipe(
             map((res)=>{
               return  res.isSuccessed==true?
               loadCategoriesSucess({categories:res.data?res.data:[]})
               :
               loadCategoriesFailure({error:res.message});
             }),
-            catchError((error)=>of(loadCategoriesFailure({error})))
-         )
-       )
+            catchError((error)=>{
+              console.error('Error en la peticion',error);
+              return of(loadCategoriesFailure({error}));
+          })
+         );
+})
     )
-    )
+ } );
 }
