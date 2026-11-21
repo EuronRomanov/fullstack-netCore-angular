@@ -3,40 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\pc1\\Documents\\EShop\\server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\extensions\\loggingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:extensions\\loggingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\service\\catalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:service\\catalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\interface\\service\\icatalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:interface\\service\\icatalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\repository\\brandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:repository\\brandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\interface\\repository\\ibrandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:interface\\repository\\ibrandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\interface\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:interface\\repository\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F3EE6B2D-0B19-306C-2C68-AB272C4E49C6}|server.csproj|c:\\users\\pc1\\documents\\eshop\\server\\interface\\service\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +26,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "IImageService.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Interface\\Service\\IImageService.cs",
               "RelativeDocumentMoniker": "Interface\\Service\\IImageService.cs",
@@ -68,111 +40,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-11-17T23:08:36.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoggingConfig.cs",
-              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Extensions\\LoggingConfig.cs",
-              "RelativeDocumentMoniker": "Extensions\\LoggingConfig.cs",
-              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Extensions\\LoggingConfig.cs",
-              "RelativeToolTip": "Extensions\\LoggingConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T04:51:07.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAF8AAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-06T03:23:15.754Z"
+              "WhenOpened": "2026-11-06T03:23:15.754Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CatalogService.cs",
-              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Service\\CatalogService.cs",
-              "RelativeDocumentMoniker": "Service\\CatalogService.cs",
-              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Service\\CatalogService.cs",
-              "RelativeToolTip": "Service\\CatalogService.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAwwFsAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T21:33:15.727Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ICatalogService.cs",
-              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Interface\\Service\\ICatalogService.cs",
-              "RelativeDocumentMoniker": "Interface\\Service\\ICatalogService.cs",
-              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Interface\\Service\\ICatalogService.cs",
-              "RelativeToolTip": "Interface\\Service\\ICatalogService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T21:30:20.56Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BrandRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Repository\\BrandRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\BrandRepository.cs",
-              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Repository\\BrandRepository.cs",
-              "RelativeToolTip": "Repository\\BrandRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T21:24:57.821Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Repository\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\CategoryRepository.cs",
-              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Repository\\CategoryRepository.cs",
-              "RelativeToolTip": "Repository\\CategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T21:17:30.335Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IBrandRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Interface\\Repository\\IBrandRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\Repository\\IBrandRepository.cs",
-              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Interface\\Repository\\IBrandRepository.cs",
-              "RelativeToolTip": "Interface\\Repository\\IBrandRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T21:08:51.296Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\Interface\\Repository\\ICategoryRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\Repository\\ICategoryRepository.cs",
-              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\Interface\\Repository\\ICategoryRepository.cs",
-              "RelativeToolTip": "Interface\\Repository\\ICategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T21:07:35.224Z"
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\pc1\\Documents\\EShop\\server\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\pc1\\Documents\\EShop\\server\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-17T23:08:36.362Z"
             }
           ]
         }

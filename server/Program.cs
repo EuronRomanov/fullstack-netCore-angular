@@ -67,13 +67,13 @@ try
     builder.Services.AddScoped<ICatalogService, CatalogService>();
 
 
-
+    var allowedOrigins = configuration.GetSection("CorsOrigins").Get<string[]>();
 
     builder.Services.AddCors(options =>
     {
         options.AddPolicy("auth", policy =>
         {
-            policy.WithOrigins("http://localhost:3000") // URL de tu frontend
+            policy.WithOrigins(allowedOrigins ?? new[] { "http://localhost:4200" }) // URL de tu frontend
                   .AllowAnyHeader()
                   .AllowAnyMethod()
                   .AllowCredentials();
@@ -111,7 +111,7 @@ try
     app.UseSwaggerUI();
    }
 
-    app.UseHttpsRedirection();
+    //app.UseHttpsRedirection();
 
     app.UseCors("auth");
 
